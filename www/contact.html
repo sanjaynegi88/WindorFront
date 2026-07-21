@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us - Windor</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-wrapper">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/Logo.png"
+              alt="Windor Logo" /></a>
+        </div>
+
+        <!-- Right Side Buttons -->
+        <div class="nav-actions">
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+
+              <li class="has-submenu">
+                <a href="services.html">Services<span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="verification.html">Verification</a></li>
+                  <li>
+                    <a href="reporting.html">Reporting Services</a>
+                  </li>
+                  <li>
+                    <a href="documention.html">Documentation</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">We Serve <span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="home-owner.html">Home Owners</a></li>
+                  <li>
+                    <a href="insurance-companies.html">Insurance Companies</a>
+                  </li>
+                  <li><a href="city-inspectors.html">City Inspectors</a></li>
+                  <li><a href="contractor.html">Contractors</a></li>
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">We Help <span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="realtors.html">Realtors</a></li>
+                  <li ><a href="distributors.html">Distributors</a></li>
+                  <li>
+                    <a href="manufacturers.html">Manufacturers</a>
+
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="resources.html">Resources<span
+                    class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="faq.html">FAQs</a></li>
+                </ul>
+              </li>
+
+              <li><a href="properties.html">Properties</a></li>
+              <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <a href="/login.html" class="btn login">Login</a>
+          <a class="btn cart"><span><img
+                src="assets/images/shopicon.png" /></span>Your Cart</a>
+
+          <div class="menu-toggle">
+            <span class="menu-icon">☰</span>
+            <span class="menu-text">MENU</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contact-page">
+      <!-- =========================================
+           PAGE BANNER + BREADCRUMB
+           ========================================= -->
+      <section class="page-banner">
+        <div class="container page-banner-grid">
+          <div class="page-banner-content">
+            <nav class="breadcrumb">
+              <a href="index.html">HOME</a>
+              <span class="sep">›</span>
+              <span class="current">CONTACT</span>
+            </nav>
+            <h1>CONTACT US</h1>
+            <p>
+              Get in touch with our team for<br />
+              support and inquiries
+            </p>
+          </div>
+
+          <div class="page-banner-image">
+            <img src="assets/images/contact-img.png" alt="Contact Windor" />
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           CONTACT: FORM + INFO CARD
+           ========================================= -->
+      <section class="contact-section">
+        <div class="container contact-grid">
+          <!-- Left: Form card -->
+          <div class="contact-form-card">
+            <h2>SEND US A MESSAGE</h2>
+            <p class="contact-intro">
+              Contact us about anything related to our company or services.
+              We'll do our best to get back to you as soon as possible.
+            </p>
+
+            <form class="contact-form" onsubmit="event.preventDefault()">
+              <div class="form-row">
+                <label for="c-name">Name <span class="req">*</span></label>
+                <input id="c-name" type="text" name="name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="c-phone">Phone Number</label>
+                <input id="c-phone" type="tel" name="phone" />
+              </div>
+
+              <div class="form-row">
+                <label for="c-email">Email <span class="req">*</span></label>
+                <input id="c-email" type="email" name="email" required />
+              </div>
+
+              <div class="form-row">
+                <label for="c-company">Company</label>
+                <input id="c-company" type="text" name="company" />
+              </div>
+
+              <div class="form-row">
+                <label for="c-subject">Subject <span
+                    class="req">*</span></label>
+                <input id="c-subject" type="text" name="subject" required />
+              </div>
+
+              <div class="form-row">
+                <label for="c-service">Message</label>
+                <select id="c-service" name="service">
+                  <option>Commercial Verification 1 hr $395</option>
+                  <option>Residential Verification</option>
+                  <option>Roof Inspection / Report</option>
+                  <option>Appraisal</option>
+                  <option>Umpire Assistance</option>
+                  <option>Property Loss Inspection</option>
+                </select>
+              </div>
+
+              <div class="form-row form-row-submit">
+                <button type="submit" class="btn-submit">Send</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Info card (dark navy) -->
+          <div class="contact-info-card">
+            <h3>Hi, we are always here to help you.</h3>
+
+            <div class="info-row">
+              <span class="info-icon">
+                <img
+                  src="assets/images/famicons_location.png"
+                  alt
+                  aria-hidden="true" />
+              </span>
+              <div class="info-text">
+                <strong>Windor Verifications LLC</strong>
+                <div>HAM LAKE, MN 55449, US</div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-icon">
+                <img
+                  src="assets/images/ic_round-email.png"
+                  alt
+                  aria-hidden="true" />
+              </span>
+              <div class="info-text">
+                <a href="mailto:info@windor.app">info@windor.app</a>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="#" aria-label="Facebook"><img
+                  src="assets/images/entypo-social_facebook-with-circle.png"
+                  alt="Facebook" /></a>
+              <a href="#" aria-label="Instagram"><img
+                  src="assets/images/mage_instagram-circle.png"
+                  alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="contact-deco-arc"
+          src="assets/images/Vector_3.png"
+          alt
+          aria-hidden="true" />
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-menu">
+            <a href="index.html">HOME</a>
+
+            <a href="about-us.html">ABOUT US</a>
+
+            <a href="services.html">SERVICES</a>
+
+            <a href="properties.html">PROPERTIES</a>
+
+            <a href="contact.html">CONTACT US</a>
+          </div>
+
+          <div class="footer-email">
+            <img src="assets/images/ic_round-email.png" />
+            <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-content">
+          <div class="footer-col">
+            <h2 class="logo">
+              <a href="index.html"><img
+                  src="assets/images/footer-logo-new.png" /></a>
+            </h2>
+
+            <p class="footer-description">
+              We transform upgrade history into verified intelligence— so
+              insurers reduce unnecessary payouts, city officials ensure
+              compliance, and property owners receive the protection they
+              deserve.
+            </p>
+          </div>
+
+          <div class="footer-col support">
+            <h4>SUPPORT</h4>
+
+            <a href="#">Help Center</a>
+
+            <a href="#">Support</a>
+            <a href="/resources.html">Resources</a>
+
+            <a href="/faq.html">FAQs</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+
+            <a href="#">Blog</a>
+
+            <a href="careers.html">Career</a>
+
+            <a href="properties.html">Sell Property</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>CONTACT US</h4>
+
+            <p class="address">HAM LAKE, MN 55449, US</p>
+
+            <p class="email">
+              <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+            </p>
+
+            <div class="social">
+              <a href="#"><img
+                  src="assets/images/entypo-social_facebook-with-circle.png" /></a>
+
+              <a href="#"><img
+                  src="assets/images/mage_instagram-circle.png" /></a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2018 Windor Verifications, LLC. - All Rights Reserved.
+          </p>
+
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Term & Services</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

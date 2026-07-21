@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>View Properties - Windor</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-wrapper">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/Logo.png"
+              alt="Windor Logo" /></a>
+        </div>
+
+        <!-- Right Side Buttons -->
+        <div class="nav-actions">
+          <nav class="nav-menu">
+            <ul>
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+
+              <li class="has-submenu">
+                <a href="services.html">Services<span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="verification.html">Verification</a></li>
+                  <li>
+                    <a href="reporting.html">Reporting Services</a>
+                  </li>
+                  <li>
+                    <a href="documention.html">Documentation</a>
+                  </li>
+                  
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">We Serve <span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="home-owner.html">Home Owners</a></li>
+                  <li>
+                    <a href="insurance-companies.html">Insurance Companies</a>
+                  </li>
+                  <li><a href="city-inspectors.html">City Inspectors</a></li>
+                  <li><a href="contractor.html">Contractors</a></li>
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="#">We Help <span class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="realtors.html">Realtors</a></li>
+                 <li><a href="distributors.html">Distributors</a></li>
+                  <li>
+                    <a href="manufacturers.html">Manufacturers</a>
+
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="has-submenu">
+                <a href="resources.html">Resources<span
+                    class="arrow">▾</span></a>
+                <ul class="submenu">
+                  <li><a href="faq.html">FAQs</a></li>
+                </ul>
+              </li>
+
+              <li class="active"><a href="properties.html">Properties</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <a href="/login.html" class="btn login">Login</a>
+          <a class="btn cart"><span><img
+                src="assets/images/shopicon.png" /></span>Your Cart</a>
+
+          <div class="menu-toggle">
+            <span class="menu-icon">☰</span>
+            <span class="menu-text">MENU</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="properties-page">
+      <section class="page-banner">
+        <div class="container page-banner-grid">
+          <div class="page-banner-content">
+            <nav class="breadcrumb">
+              <a href="index.html">HOME</a>
+              <span class="sep">›</span>
+              <span class="current">PROPERTIES</span>
+            </nav>
+            <h1>VIEW PROPERTIES</h1>
+            <p>
+              Where Your Perfect Home Awaits<br />
+              Browse spaces tailored to your needs
+            </p>
+          </div>
+
+          <div class="page-banner-image">
+            <img
+              src="assets/images/Properties-banner.png"
+              alt="Insurance inspection" />
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           SEARCH BAR
+           ========================================= -->
+      <section class="properties-search-section">
+        <div class="container">
+          <form
+            class="properties-search"
+            role="search"
+            onsubmit="event.preventDefault()">
+            <div class="search-inner">
+              <span class="search-icon">
+                <img
+                  src="assets/images/mynaui_search.png"
+                  alt
+                  aria-hidden="true" />
+              </span>
+              <input
+                type="search"
+                name="q"
+                placeholder="Search Properties"
+                aria-label="Search Properties" />
+            </div>
+            <button type="submit" class="search-submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- =========================================
+           PROPERTIES GRID
+           ========================================= -->
+      <section class="properties-grid-section">
+        <div class="container">
+          <div class="properties-grid">
+            <!-- Card 1 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img
+                  src="assets/images/prop-1.png"
+                  alt="8175 Riverdale Dr NW" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">8175 Riverdale Dr NW</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Ramsey Ramsey<br />
+                    Minnesota 55449
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-2.png" alt="8027 Narcissus Ln N" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">8027 Narcissus Ln N</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Maple Grove<br />
+                    Minnesota 55311
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-3.png" alt="13506 309th Ave NW" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">13506 309th Ave NW</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Princeton<br />
+                    Minnesota 55371
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-4.png" alt="203 Main St" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">203 Main St</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Isanti<br />
+                    Minnesota 55040
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-5.png" alt="3428 168th Ave NE" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">3428 168th Ave NE</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Ham Lake<br />
+                    Minnesota 55304
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img
+                  src="assets/images/prop-6.png"
+                  alt="11829 Flanders Circle N." />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">11829 Flanders Circle N.</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Blaine<br />
+                    Minnesota 55449
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-7.png" alt="362 Sioux Lookout" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">362 Sioux Lookout.</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Lino Lakes<br />
+                    Minnesota
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-8.png" alt="378 Sioux Lookout" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">378 Sioux Lookout</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Lino Lakes<br />
+                    Minnesota
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" checked disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-9.png" alt="6613 Sioux Lane" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">6613 Sioux Lane.</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Blaine<br />
+                    Minnesota 55449
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="property-card">
+              <div class="properties-images">
+                <img src="assets/images/prop-9.png" alt="6613 Sioux Lane" />
+              </div>
+              <div class="property-body">
+                <h3 class="property-title">6613 Sioux Lane.</h3>
+                <div class="property-location">
+                  <span class="loc-icon"><img
+                      src="assets/images/famicons_location.png"
+                      alt
+                      aria-hidden="true" /></span>
+                  <span class="loc-text">
+                    Blaine<br />
+                    Minnesota 55449
+                  </span>
+                </div>
+                <div class="property-checks">
+                  <label><input type="checkbox" checked disabled /> Siding Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Window Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Roofing Data
+                    Available?</label>
+                  <label><input type="checkbox" disabled /> Door Data
+                    Available?</label>
+                </div>
+                <a href="#" class="property-btn">Learn More</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination -->
+          <nav
+            class="properties-pagination"
+            aria-label="Pagination"
+            id="propertiesPagination">
+            <button type="button" class="page-prev" data-role="prev">
+              Previous
+            </button>
+            <div class="page-numbers" id="propertiesPageNumbers">
+              <!-- page number buttons are injected by JS -->
+            </div>
+            <button type="button" class="page-next" data-role="next">
+              Next
+            </button>
+
+            <span class="page-jump">
+              Go to
+              <span class="switch" role="switch" aria-checked="false"></span>
+              Page
+            </span>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-menu">
+              <a href="index.html">HOME</a>
+
+              <a href="about-us.html">ABOUT US</a>
+
+              <a href="services.html">SERVICES</a>
+
+              <a href="properties.html">PROPERTIES</a>
+
+              <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="footer-email">
+              <img src="assets/images/ic_round-email.png" />
+              <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="footer-content">
+            <div class="footer-col">
+              <h2 class="logo">
+                <a href="index.html"><img
+                    src="assets/images/footer-logo-new.png" /></a>
+              </h2>
+
+              <p class="footer-description">
+                We transform upgrade history into verified intelligence— so
+                insurers reduce unnecessary payouts, city officials ensure
+                compliance, and property owners receive the protection they
+                deserve.
+              </p>
+            </div>
+
+            <div class="footer-col support">
+              <h4>SUPPORT</h4>
+
+              <a href="#">Help Center</a>
+
+              <a href="#">Support</a>
+              <a href="/resources.html">Resources</a>
+
+              <a href="/faq.html">FAQs</a>
+            </div>
+
+            <div class="footer-col">
+              <h4>COMPANY</h4>
+
+              <a href="#">Blog</a>
+
+              <a href="careers.html">Career</a>
+
+              <a href="properties.html">Sell Property</a>
+            </div>
+
+            <div class="footer-col">
+              <h4>CONTACT US</h4>
+
+              <p class="address">HAM LAKE, MN 55449, US</p>
+
+              <p class="email">
+                <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+              </p>
+
+              <div class="social">
+                <a href="#"><img
+                    src="assets/images/entypo-social_facebook-with-circle.png" /></a>
+
+                <a href="#"><img
+                    src="assets/images/mage_instagram-circle.png" /></a>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="footer-bottom">
+            <p>
+              Copyright © 2018 Windor Verifications, LLC. - All Rights Reserved.
+            </p>
+
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+
+              <a href="#">Term & Services</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login - Windor</title>
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/custom.js" defer></script>
+
+    <!-- Google Font -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =========================================
+
+HEADER / NAVIGATION
+
+========================================= -->
+
+    <header class="header">
+    <div class="container nav-wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/Logo.png" alt="Windor Logo" /></a>
+      </div>
+
+      <!-- Right Side Buttons -->
+      <div class="nav-actions">
+        <nav class="nav-menu">
+          <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+
+            <li class="has-submenu">
+              <a href="services.html">Services<span class="arrow">▾</span></a>
+              <ul class="submenu">
+                <li><a href="verification.html">Verification</a></li>
+                <li>
+                    <a href="reporting.html">Reporting Services</a>
+                </li>
+                <li>
+                  <a href="documention.html">Documentation</a>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#">We Serve <span class="arrow">▾</span></a>
+              <ul class="submenu">
+                <li><a href="home-owner.html">Home Owners</a></li>
+                <li>
+                  <a href="insurance-companies.html">Insurance Companies</a>
+                </li>
+                <li><a href="city-inspectors.html">City Inspectors</a></li>
+                <li><a href="contractor.html">Contractors</a></li>
+              </ul>
+            </li>
+
+             <li class="has-submenu">
+              <a href="#">We Help <span class="arrow">▾</span></a>
+              <ul class="submenu">
+                <li><a href="realtors.html">Realtors</a></li>
+               <li><a href="distributors.html">Distributors</a></li>
+                  <li>
+                    <a href="manufacturers.html">Manufacturers</a>
+
+                  </li>
+          
+                
+                
+              </ul>
+            </li>
+
+
+            <li class="has-submenu">
+              <a href="resources.html">Resources<span class="arrow">▾</span></a>
+              <ul class="submenu">
+                <li><a href="faq.html">FAQs</a></li>
+              </ul>
+            </li>
+
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <a  class="active" href="/login.html" class="btn login">Login</a>
+        <a class="btn cart"><span><img src="assets/images/shopicon.png" /></span>Your Cart</a>
+
+        <div class="menu-toggle">
+          <span class="menu-icon">☰</span>
+          <span class="menu-text">MENU</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- LOGIN -->
+    <section class="login-section">
+      <div class="login-bg">
+        <!-- Replace this src with your actual Login-Banner.png -->
+        <img src="assets/images/login-bg.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="container login-container">
+        <div class="login-card" role="dialog" aria-labelledby="loginTitle">
+          <h1 id="loginTitle" class="login-title">LOGIN</h1>
+          <p class="login-subtitle">
+            Please enter your login details to log in.
+          </p>
+
+          <form class="login-form" onsubmit="event.preventDefault()">
+            <div class="login-field">
+              <label for="login-email">Email Address</label>
+              <input
+                id="login-email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="login-field">
+              <label for="login-password">Password</label>
+              <input
+                id="login-password"
+                type="password"
+                name="password"
+                autocomplete="current-password"
+                required
+              />
+              <a href="#" class="login-forgot">Forgot Password?</a>
+            </div>
+
+            <label class="login-remember">
+              <input type="checkbox" name="remember" />
+              <span>Keep me logged in</span>
+            </label>
+
+            <button type="submit" class="login-submit">Log In</button>
+
+            <p class="login-signup">
+              Don't have an account?
+              <a href="#">Create Account</a>
+            </p>
+
+            <div class="login-divider"><span>Or Continue</span></div>
+
+            <div class="login-social">
+              <a
+                href="#"
+                class="soc-btn soc-fb"
+                aria-label="Continue with Facebook"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.7V13h2.7v8h3.1z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="soc-btn soc-google"
+                aria-label="Continue with Google"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fill="#EA4335"
+                    d="M12 10.2v3.9h5.5c-.2 1.4-1.7 4.2-5.5 4.2-3.3 0-6-2.7-6-6.1s2.7-6.1 6-6.1c1.9 0 3.2.8 3.9 1.5l2.7-2.6C17 3.4 14.7 2.3 12 2.3 6.6 2.3 2.2 6.7 2.2 12.2S6.6 22.1 12 22.1c6.4 0 10.6-4.5 10.6-10.9 0-.7-.1-1.3-.2-1.9H12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+   <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-menu">
+              <a href="index.html">HOME</a>
+
+              <a href="about-us.html">ABOUT US</a>
+
+              <a href="services.html">SERVICES</a>
+
+              <a href="properties.html">PROPERTIES</a>
+
+              <a href="contact.html">CONTACT US</a>
+            </div>
+
+            <div class="footer-email">
+              <img src="assets/images/ic_round-email.png" />
+              <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="footer-content">
+            <div class="footer-col">
+              <h2 class="logo">
+                <a href="index.html"><img
+                    src="assets/images/footer-logo-new.png" /></a>
+              </h2>
+
+              <p class="footer-description">
+                We transform upgrade history into verified intelligence— so
+                insurers reduce unnecessary payouts, city officials ensure
+                compliance, and property owners receive the protection they
+                deserve.
+              </p>
+            </div>
+
+            <div class="footer-col support">
+              <h4>SUPPORT</h4>
+
+              <a href="#">Help Center</a>
+
+              <a href="#">Support</a>
+              <a href="/resources.html">Resources</a>
+
+              <a href="/faq.html">FAQs</a>
+            </div>
+
+            <div class="footer-col">
+              <h4>COMPANY</h4>
+
+              <a href="#">Blog</a>
+
+              <a href="careers.html">Career</a>
+
+              <a href="properties.html">Sell Property</a>
+            </div>
+
+            <div class="footer-col">
+              <h4>CONTACT US</h4>
+
+              <p class="address">HAM LAKE, MN 55449, US</p>
+
+              <p class="email">
+                <a href="mailto:info@windorllc.com">info@windorllc.com</a>
+              </p>
+
+              <div class="social">
+                <a href="#"><img
+                    src="assets/images/entypo-social_facebook-with-circle.png" /></a>
+
+                <a href="#"><img
+                    src="assets/images/mage_instagram-circle.png" /></a>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="footer-bottom">
+            <p>
+              Copyright © 2018 Windor Verifications, LLC. - All Rights Reserved.
+            </p>
+
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+
+              <a href="#">Term & Services</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
