@@ -20,15 +20,9 @@ jobs:
           script: |
             set -e
 
-            cd /home/ubuntu/WindorAPI
+            cd /home/ubuntu/WindorFront
 
             echo "Pulling latest code..."
             git pull origin main
-
-            echo "Building and starting containers..."
-            docker compose up -d --build
-
-            echo "Cleaning unused Docker images..."
-            docker image prune -f
 
             echo "✅ Deployment completed successfully."
