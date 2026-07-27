@@ -1,9 +1,20 @@
 let slides = document.querySelectorAll(".slide");
 let index = 0;
+let autoSlide;
 
 function showSlide(i) {
   slides.forEach(slide => slide.classList.remove("active"));
   if (slides[i]) slides[i].classList.add("active");
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
 }
 
 const nextBtn = document.querySelector(".next");
@@ -11,18 +22,49 @@ const prevBtn = document.querySelector(".prev");
 
 if (nextBtn) {
   nextBtn.onclick = () => {
-    index = (index + 1) % slides.length;
-    showSlide(index);
+    nextSlide();
+    restartAutoSlide();
   };
 }
 
 if (prevBtn) {
   prevBtn.onclick = () => {
-    index = (index - 1 + slides.length) % slides.length;
-    showSlide(index);
+    prevSlide();
+    restartAutoSlide();
   };
 }
 
+function startAutoSlide() {
+  autoSlide = setInterval(nextSlide, 3000);
+}
+
+function restartAutoSlide() {
+  clearInterval(autoSlide);
+  startAutoSlide();
+}
+
+showSlide(index);
+startAutoSlide();
+
+/* Sticky Header */
+
+const header = document.querySelector(".header");
+const hero = document.querySelector(".hero");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > 100) {
+        header.classList.add("sticky");
+        // hero.style.paddingTop = header.offsetHeight + "px";
+    } else {
+        header.classList.remove("sticky");
+        // hero.style.paddingTop = "0";
+    }
+
+    lastScrollTop = scrollTop;
+});
 
 /* SERVICES SLIDER */
 

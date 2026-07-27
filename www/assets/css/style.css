@@ -67,9 +67,19 @@ HEADER
 ========================================= */
 
 .header {
-  background: #fff;
-
   border-bottom: 1px solid #eee;
+  background: #fff;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+header.header.sticky {
+    position: fixed !important;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    scroll-behavior: smooth;
 }
 
 .nav-wrapper {
@@ -184,6 +194,45 @@ a.btn.cart span {
   cursor: pointer;
 }
 
+.header {
+    position: absolute; /* or relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.35s ease;
+    z-index: 999;
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: slideDown 0.35s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.hero {
+    padding-top:130px !important;
+    transition: padding-top 0.35s ease;
+}
+
+.services-section .service-card:hover a {
+    color: #fff;
+}
+
+.services-section .service-card:hover a svg {
+    filter: brightness(0)invert(1);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 /* =========================================
 
 HERO SECTION
@@ -293,7 +342,7 @@ HERO SECTION
   display: block;
 }
 
-.slide {
+/* .slide {
   position: relative;
 
   display: none;
@@ -301,6 +350,28 @@ HERO SECTION
 
 .slide.active {
   display: block;
+} */
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(40px);
+
+    transition:
+        opacity .5s ease,
+        transform .5s ease;
+}
+
+.slide.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .slide-caption {
@@ -370,6 +441,13 @@ HERO SECTION
 .next {
   right: 10px;
 }
+
+.hero-image .prev, .hero-image .next{
+  background: #20A8A7;
+  color: #fff;
+  padding: 7px 17px;
+}
+
 
 /* =========================================
 
@@ -577,6 +655,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 }*/
 
+.serve-section .swiper-slide.serve-card a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    align-items: end;
+    padding-bottom: 25px;
+}
 /* SLIDER */
 
 .serve-slider {
@@ -944,6 +1033,65 @@ this CSS turns the row into a centered flex grid)
 .services-section.no-slider .swiper-button-next,
 .services-section.no-slider .swiper-button-prev {
   display: none !important;
+}
+
+.services-section .service-card a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 32px;
+    padding-bottom: 37px;
+}
+
+.services-section .service-card a svg{
+  position: relative;
+  bottom: 5px;
+  left: 4px;
+}
+
+.services-section .service-card:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    background: #1ca7a6;
+    z-index:-1;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.services-section .service-card:hover:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.service-card:hover h3,.service-card:hover p {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.service-card:hover img {
+    filter: brightness(0) invert(1);
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 
@@ -5935,6 +6083,13 @@ p.banner-title {
 .properties-section {
   display: flex;
   gap: 20px;
+  /* added below css */
+  justify-content: center;
+  width: 100%;
+}
+
+.properties-section > a{
+    flex: 1;
 }
 
 /* ==============================================================
