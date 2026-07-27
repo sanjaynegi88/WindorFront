@@ -275,7 +275,8 @@ HERO SECTION
 
   font-family: "Asap", sans-serif;
 
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
 
   color: #1f2a44;
 }
