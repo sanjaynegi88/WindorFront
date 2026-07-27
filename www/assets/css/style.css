@@ -211,7 +211,7 @@ a.btn.cart span {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.hero {
+.hero,.page-banner {
     padding-top:130px !important;
     transition: padding-top 0.35s ease;
 }
@@ -233,6 +233,11 @@ a.btn.cart span {
     }
 }
 
+.btn.signup{
+  background: #1f2a44;
+  color: #fff;
+  border: 1px solid #1f2a44;
+}
 /* =========================================
 
 HERO SECTION
