@@ -5186,6 +5186,11 @@ img.client-image {
   border-radius: 12px;
 }
 
+.report-hero{
+  max-height: unset;
+  margin-bottom: -100px;
+}
+
 p.banner-title {
   font-size: 25px;
 }
