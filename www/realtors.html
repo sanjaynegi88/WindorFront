@@ -37,7 +37,8 @@ HEADER / NAVIGATION
 
 ========================================= -->
 
-    <header class="header">
+    <!-- The common header is loading from custom.js, do not consider this header -->
+<header class="header">
       <div class="container nav-wrapper">
         <!-- Logo -->
         <div class="logo">
@@ -81,7 +82,7 @@ HEADER / NAVIGATION
               <li class="active has-submenu">
                 <a href="#">We Help <span class="arrow">▾</span></a>
                 <ul class="submenu">
-                  <li  class="active"><a href="realtors.html">Realtors</a></li>
+                  <li class="active"><a href="realtors.html">Realtors</a></li>
                  <li><a href="distributors.html">Distributors</a></li>
                   <li>
                     <a href="manufacturers.html">Manufacturers</a>
@@ -100,7 +101,9 @@ HEADER / NAVIGATION
               </li>
 
               
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html#properties">Properties</a></li>
+              <li><a href="index.html#contractors">Contractors</a></li>
+              <li><a href="plans.html">Plans</a></li><li><a href="contact.html">Contact Us</a></li>
             </ul>
           </nav>
 
@@ -235,6 +238,79 @@ HEADER / NAVIGATION
         </div>
       </div>
     </section>
+
+     <!-- Realtor Plans -->
+        <div class="plan-role-block" data-role="realtor">
+            <div class="plan-role-header">
+                <h2 class="plan-role-heading">Realtor Plans</h2>
+                <div class="billing-switch">
+                    <span>Monthly</span>
+                    <button class="switch role-switch" aria-label="Toggle annual billing for realtor plans"></button>
+                    <span>Annual</span>
+                </div>
+            </div>
+            <section class="plans">
+
+                <article class="plan-card" data-plan-type="both">
+                    <div class="plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path
+                                d="m12 3 2.2 4.45 4.9.71-3.55 3.46.84 4.88L12 14.2l-4.39 2.3.84-4.88L4.9 8.16l4.9-.71L12 3z" />
+                        </svg>
+                    </div>
+                    <h2>Realtor Free Plan</h2>
+                    <p class="description">FREE Plan.</p>
+                    <div class="price"><span class="amount">Free</span></div>
+                    <div class="features">
+                        <p class="features-title">Features included</p>
+                        <div class="role-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                                <path
+                                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z">
+                                </path>
+
+                                <path d="M5 21h14"></path>
+                            </svg>
+                            REALTORS
+                        </div>
+                        <div class="feature"><span class="check">✓</span>Pdf Reports <small>(100)</small></div>
+                    </div>
+                    <button class="get-started" onclick="window.location.href=`https://windor.app/register`">Get
+                        Started</button>
+                </article>
+
+                <article class="plan-card" data-plan-type="annualy">
+                    <div class="plan-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path
+                                d="m12 3 2.2 4.45 4.9.71-3.55 3.46.84 4.88L12 14.2l-4.39 2.3.84-4.88L4.9 8.16l4.9-.71L12 3z" />
+                        </svg>
+                    </div>
+                    <h2>Realtor Standard Plan</h2>
+                    <p class="description">STANDARD Plan.</p>
+                    <div class="price"><span class="amount">$99.00</span><span class="period">/year</span></div>
+                    <div class="features">
+                        <p class="features-title">Features included</p>
+                        <div class="role-pill"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+
+                                <path
+                                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z">
+                                </path>
+
+                                <path d="M5 21h14"></path>
+                            </svg> REALTORS</div>
+                        <div class="feature"><span class="check">✓</span>Pdf Reports <small>(100)</small></div>
+                    </div>
+                    <button class="get-started" onclick="window.location.href=`https://windor.app/register`">Get
+                        Started</button>
+                </article>
+
+            </section>
+        </div>
 
     <!-- =========================================
 FOOTER

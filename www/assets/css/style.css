@@ -2677,6 +2677,11 @@ img.client-image {
   padding-bottom: 20px;
 }
 
+.client-title{
+  text-align:center !important;
+  margin-bottom:20px;
+}
+
 .breadcrumb a {
   color: #708090ee;
   text-decoration: none;
@@ -2879,6 +2884,24 @@ img.client-image {
   align-items: center;
 }
 
+.services.why-approach-wrapper {
+  grid-template-columns: unset
+}
+
+.services.why-approach-wrapper h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-us-experience h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-us-experience h3 {
+  font-size: 35px;
+}
+
 /* -------- Left: Ecosystem logo (no border, no card) -------- */
 .why-card {
   display: flex;
@@ -3045,6 +3068,7 @@ a.btn.login:hover {
   .approach-card h3 {
     font-size: 38px;
   }
+
   .experience-para {
     padding-inline: 0px;
   }
@@ -7385,10 +7409,11 @@ body {
   .menu-toggle .menu-text {
     display: none;
   }
+
   .reporting-arc-left {
     display: none;
   }
- 
+
 }
 
 /* ---------- HERO ---------- */
@@ -7405,13 +7430,15 @@ body {
   .svc-card-image img {
     width: 70%;
   }
- 
+
 }
+
 @media (max-width: 1680px) {
   .dist-arc-left {
     display: none;
   }
 }
+
 @media (max-width: 991px) {
   .hero {
     padding: 30px 0 40px 0;
@@ -7492,7 +7519,7 @@ body {
   .page-banner .page-banner-grid {
     grid-template-columns: 1fr 1.2fr;
     gap: 24px;
-    min-height: 0;  
+    min-height: 0;
   }
 
   .page-banner-content {
@@ -7517,6 +7544,7 @@ body {
   .page-banner-content p {
     font-size: 17px;
   }
+
   span.reporting-arc.reporting-arc-right.service-arc.overlap-section-service-page {
     display: none;
   }
@@ -7691,5 +7719,1144 @@ PROBLEM / SOLUTION SECTION
 
   .ps-divider {
     margin: 0 auto 20px;
+  }
+}
+
+/* Membership plan */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #339fd0;
+  --navy: #212b45;
+  --page-bg: #f8fbff;
+  --white: #ffffff;
+  --muted: #7d879a;
+  --border: rgba(255, 255, 255, .12);
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background: var(--page-bg);
+  color: var(--navy);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.site-header {
+  height: 78px;
+  background: #fff;
+  border-bottom: 1px solid #eef2f7;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  width: 125px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 72px;
+  height: 58px;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #657084;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav .dropdown::after {
+  content: "⌄";
+  margin-left: 4px;
+  font-size: 9px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: 30px;
+}
+
+.avatar {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #f0f2f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.account-name {
+  font-size: 9px;
+  line-height: 1.45;
+  color: #68748a;
+  white-space: nowrap;
+}
+
+.account-name strong {
+  color: #526075;
+  font-weight: 700;
+}
+
+.notification {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  margin-left: 4px;
+  background: #dff5f4;
+  border: 1px solid #bfe8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+/* ---------------- MAIN ---------------- */
+
+main {
+  flex: 1;
+  padding: 47px 20px 26px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.pricing-header h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 30px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.pricing-header h1 span {
+  display: block;
+}
+
+.pricing-header h1 em {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.pricing-header p {
+  max-width: 470px;
+  margin: 9px auto 17px;
+  color: #768399;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.billing-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border-radius: 7px;
+  padding: 5px 8px;
+  box-shadow: none;
+  color: #59667a;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.switch {
+  width: 24px;
+  height: 14px;
+  background: #dfe5ec;
+  border-radius: 20px;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: none;
+  transition: .2s;
+}
+
+.switch.active {
+  background: var(--primary);
+}
+
+.switch.active::after {
+  transform: translateX(10px);
+}
+
+/* ---------------- CARDS ---------------- */
+
+.plans {
+  width: min(100%, 834px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 21px;
+  align-items: stretch;
+}
+
+.no_plans {
+  text-align: center;
+}
+
+.plans-page {
+  padding: 130px !important
+}
+
+.plan-card {
+  position: relative;
+  min-height: 290px;
+  padding: 30px 25px 40px 25px;
+  padding-bottom: 40px;
+  border-radius: 22px;
+  background: var(--navy);
+  border: 1px solid var(--primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.plan-role-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+section.plans .features {
+    background: transparent;
+}
+
+.plan-role-block {
+  width: 100%;
+}
+
+.plan-role-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+
+.plan-role-header .plan-role-heading {
+  margin: 0;
+}
+
+.plan-role-header .billing-switch {
+  margin: 0;
+}
+
+.billed-annually {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 6px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.current-plan-wrapper {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.current-plan-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  background: #fff;
+  color: #1ca7a6;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+  box-shadow:
+    0 20px 25px -5px rgba(34, 197, 94, 0.2),
+    0 8px 10px -6px rgba(34, 197, 94, 0.2);
+}
+
+.current-plan-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.plan-card:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(51, 159, 208, .20);
+}
+
+.plan-icon {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  color: var(--navy);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.plan-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.plan-card h2 {
+  margin: 0 0 5px;
+  min-height: 31px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -.2px;
+  text-transform: uppercase;
+}
+
+.plan-card p.description {
+  margin: 0;
+  min-height: 25px;
+  color: #fff;
+  font-size: 9.5px;
+  line-height: 1.35;
+}
+
+.price {
+  margin: 17px 0 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.price .amount {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -.6px;
+}
+
+.price .period {
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.features {
+  flex: 1;
+}
+
+.features-title {
+  margin: 0 0 7px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, .10);
+  color: rgba(255, 255, 255, .50);
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.role-pill {
+  height: 22px;
+  padding: 0 9px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .10);
+  border: 1px solid rgba(255, 255, 255, .08);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  font-size: 7.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .45px;
+}
+
+.role-pill svg {
+  width: 9px;
+  height: 9px;
+  opacity: .75;
+  flex: 0 0 auto;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 9px;
+  line-height: 1.25;
+}
+
+.check {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.check svg {
+  width: 7px;
+  height: 7px;
+  stroke-width: 3;
+}
+
+.get-started {
+  width: 100%;
+  height: 32px;
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, .75);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 8.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.get-started:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+  .nav {
+    gap: 13px;
+  }
+
+  .account {
+    margin-left: 12px;
+  }
+
+  .plans {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .account {
+    margin-left: auto;
+  }
+
+  main {
+    padding-top: 35px;
+  }
+
+  .pricing-header h1 {
+    font-size: 27px;
+  }
+
+  .plans {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .plan-card {
+    min-height: 300px;
+  }
+
+  footer {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   TABLETS + MOBILE
+   1023px and below
+   --------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+
+  /* Header */
+  .site-header {
+    height: auto;
+    min-height: 70px;
+  }
+
+  .header-inner {
+    width: 100%;
+    padding: 12px 24px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 9px;
+  }
+
+  .account {
+    margin-left: 15px;
+  }
+
+  /* Main */
+  main {
+    padding: 40px 24px 30px;
+  }
+
+  /* Pricing heading */
+  .pricing-header {
+    margin-bottom: 35px;
+  }
+
+  .pricing-header h1 {
+    font-size: 28px;
+  }
+
+  /* Cards */
+  .plans {
+    width: 100%;
+    max-width: 760px;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .plan-card {
+    min-height: 100%;
+  }
+
+  /* Footer */
+  .footer-inner {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   LARGE MOBILE
+   481px - 767px
+   --------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+  /* Header */
+
+  .site-header {
+    min-height: auto;
+  }
+
+  .header-inner {
+    padding: 12px 18px;
+
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .brand {
+    width: auto;
+  }
+
+  .brand-logo {
+    width: 65px;
+    height: 52px;
+  }
+
+  /* Keep account on first row */
+  .account {
+    margin-left: auto;
+  }
+
+  .account-name {
+    display: none;
+  }
+
+  /* Navigation becomes second row */
+
+  .nav {
+    order: 3;
+
+    width: 100%;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 18px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    padding-bottom: 3px;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex-shrink: 0;
+    font-size: 9px;
+  }
+
+
+  /* Main */
+
+  main {
+    padding: 35px 18px 30px;
+  }
+
+
+  /* Heading */
+
+  .pricing-header {
+    margin-bottom: 30px;
+  }
+
+  .pricing-header h1 {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .pricing-header p {
+    max-width: 420px;
+
+    margin-top: 10px;
+
+    font-size: 12px;
+  }
+
+
+  /* Cards */
+
+  .plans {
+    max-width: 500px;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .plan-card {
+    min-height: auto;
+
+    padding: 28px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   NORMAL MOBILE
+   375px - 480px
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  /* Header */
+
+  .header-inner {
+    padding: 10px 14px;
+  }
+
+  .brand-logo {
+    width: 60px;
+    height: 48px;
+  }
+
+  .avatar {
+    width: 27px;
+    height: 27px;
+  }
+
+  .notification {
+    width: 27px;
+    height: 27px;
+  }
+
+  .nav {
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    font-size: 8px;
+  }
+
+
+  /* Main */
+
+  main {
+    padding: 30px 14px 25px;
+  }
+
+
+  /* Heading */
+
+  .pricing-header {
+    margin-bottom: 26px;
+  }
+
+  .pricing-header h1 {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  .pricing-header p {
+    font-size: 11px;
+    line-height: 1.5;
+
+    padding: 0 8px;
+  }
+
+
+  /* Billing */
+
+  .billing-switch {
+    font-size: 9px;
+  }
+
+
+  /* Cards */
+
+  .plans {
+    gap: 16px;
+  }
+
+  .plan-card {
+    padding: 24px;
+
+    border-radius: 20px;
+  }
+
+  .plan-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 14px;
+
+    margin-bottom: 20px;
+  }
+
+  .plan-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+
+  .plan-header {
+    margin-bottom: 20px;
+  }
+
+  .plan-header h3 {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  .plan-header p {
+    font-size: 12px;
+    min-height: 34px;
+  }
+
+
+  /* Price */
+
+  .plan-price {
+    margin-bottom: 26px;
+  }
+
+  .plan-price .amount {
+    font-size: 31px;
+  }
+
+  .plan-price .period {
+    font-size: 12px;
+  }
+
+
+  /* Features */
+
+  .plan-features {
+    margin-bottom: 26px;
+  }
+
+  .features-title {
+    font-size: 10px;
+  }
+
+  .role {
+    padding: 8px 10px;
+
+    border-radius: 10px;
+  }
+
+  .role span {
+    font-size: 10px;
+  }
+
+  .feature {
+    font-size: 12px;
+  }
+
+  .feature-value {
+    font-size: 10px;
+  }
+
+
+  /* Button */
+
+  .get-started {
+    height: 46px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+  }
+
+  .stripe-text {
+    margin-top: 12px;
+  }
+
+
+  /* Footer */
+
+  .copyright {
+    font-size: 7px;
+    line-height: 1.5;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-links a {
+    font-size: 8px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL MOBILE
+   320px - 374px
+   --------------------------------------------------------- */
+
+@media (max-width: 374px) {
+
+  /* Header */
+
+  .header-inner {
+    padding: 9px 10px;
+  }
+
+  .brand-logo {
+    width: 55px;
+    height: 44px;
+  }
+
+  .account {
+    gap: 5px;
+  }
+
+  .avatar,
+  .notification {
+    width: 25px;
+    height: 25px;
+  }
+
+  .notification svg {
+    width: 11px;
+    height: 11px;
+  }
+
+
+  /* Navigation */
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 7px;
+  }
+
+
+  /* Main */
+
+  main {
+    padding: 25px 10px 22px;
+  }
+
+
+  /* Heading */
+
+  .pricing-header {
+    margin-bottom: 22px;
+  }
+
+  .pricing-header h1 {
+    font-size: 22px;
+  }
+
+  .pricing-header p {
+    padding: 0 5px;
+
+    font-size: 10px;
+  }
+
+
+  /* Billing */
+
+  .billing-switch {
+    padding: 4px 7px;
+
+    font-size: 8px;
+  }
+
+
+  /* Cards */
+
+  .plans {
+    gap: 14px;
+  }
+
+  .plan-card {
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+
+  /* Icon */
+
+  .plan-icon {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 17px;
+
+    border-radius: 12px;
+  }
+
+  .plan-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+
+  /* Heading */
+
+  .plan-header {
+    margin-bottom: 17px;
+  }
+
+  .plan-header h3 {
+    font-size: 18px;
+  }
+
+  .plan-header p {
+    font-size: 11px;
+    min-height: 30px;
+  }
+
+
+  /* Price */
+
+  .plan-price {
+    margin-bottom: 22px;
+  }
+
+  .plan-price .amount {
+    font-size: 27px;
+  }
+
+  .plan-price .period {
+    font-size: 10px;
+  }
+
+
+  /* Features */
+
+  .plan-features {
+    margin-bottom: 22px;
+  }
+
+  .features-title {
+    font-size: 9px;
+
+    letter-spacing: .08em;
+  }
+
+  .role {
+    padding: 7px 8px;
+
+    gap: 5px;
+  }
+
+  .role svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .role span {
+    font-size: 8px;
+    letter-spacing: .03em;
+  }
+
+  .feature {
+    font-size: 11px;
+    gap: 7px;
+  }
+
+  .check {
+    width: 14px;
+    height: 14px;
+  }
+
+  .check svg {
+    width: 8px;
+    height: 8px;
+  }
+
+  .feature-value {
+    font-size: 9px;
+  }
+
+
+  /* Button */
+
+  .get-started {
+    height: 42px;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+  }
+
+  .stripe-text {
+    font-size: 9px;
+    margin-top: 10px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  .copyright {
+    font-size: 6.5px;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-links a {
+    font-size: 7px;
   }
 }

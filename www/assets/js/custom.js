@@ -1,3 +1,5 @@
+
+
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 let autoSlide;
@@ -478,3 +480,30 @@ menuToggle.addEventListener("click", function () {
         boot();
     }
 })();
+
+document.querySelectorAll(".plan-role-block").forEach(function (block) {
+        const switchBtn = block.querySelector(".role-switch");
+        const cards = block.querySelectorAll(".plan-card");
+
+        function updatePlans() {
+            const isAnnual = switchBtn.classList.contains("active");
+            const selectedType = isAnnual ? "annualy" : "monthly";
+
+            cards.forEach(function (card) {
+                const planType = card.dataset.planType;
+                if (planType === selectedType || planType === "both") {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        switchBtn.addEventListener("click", function () {
+            this.classList.toggle("active");
+            updatePlans();
+        });
+
+        // Initial state = Monthly for every role block
+        updatePlans();
+    });
