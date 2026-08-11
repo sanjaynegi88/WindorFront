@@ -7939,8 +7939,8 @@ main {
 /* ---------------- CARDS ---------------- */
 
 .plans {
-  /* width: min(100%, 834px); */
-  width:65%;
+  width: min(100%, 1234px);
+  /* width:65%; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
