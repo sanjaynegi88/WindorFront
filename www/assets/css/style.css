@@ -7939,7 +7939,8 @@ main {
 /* ---------------- CARDS ---------------- */
 
 .plans {
-  width: min(100%, 834px);
+  /* width: min(100%, 834px); */
+  width:65%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -8072,8 +8073,8 @@ section.plans .features {
   margin: 0 0 5px;
   min-height: 31px;
   color: #fff;
-  font-size: 18px;
-  line-height: 1.15;
+  font-size: 21px;
+  line-height: 1.25;
   font-weight: 800;
   letter-spacing: -.2px;
   text-transform: uppercase;
@@ -8083,7 +8084,7 @@ section.plans .features {
   margin: 0;
   min-height: 25px;
   color: #fff;
-  font-size: 9.5px;
+  font-size: 11px;
   line-height: 1.35;
 }
 
