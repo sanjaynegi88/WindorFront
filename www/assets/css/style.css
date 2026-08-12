@@ -1653,7 +1653,8 @@ span.hiw-num {
 .container.bring-section {
   margin-top: -265px;
   position: relative;
-  z-index: 999;
+  /* z-index: 999; */
+  z-index: 9;
   padding-left: 60px;
 }
 
@@ -1804,6 +1805,7 @@ span.hiw-num {
 
   .hiw-section {
     padding: 70px 0;
+    padding-bottom: 0px;
   }
 
   .svc-why-row {
@@ -1853,7 +1855,8 @@ span.hiw-num {
 
 @media (max-width: 767px) {
   .core-svc-section {
-    padding: 60px 0 70px 0;
+    /* padding: 60px 0 70px 0; */
+    padding: 60px 0 0px 0;
   }
 
   .core-svc-section .centered-title {
@@ -1900,6 +1903,10 @@ span.hiw-num {
   .svc-cta-text h2 {
     font-size: 22px;
   }
+
+  .svc-why-item p{
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1912,6 +1919,12 @@ span.hiw-num {
   .svc-why-item p,
   .hiw-step p {
     font-size: 14.5px;
+    /* font-size: 10px; */
+    /* padding-left: 0; */
+  }
+
+  .svc-why-item p{
+    font-size: 10px;
   }
 
   .svc-wwd-overlay {
@@ -1919,8 +1932,14 @@ span.hiw-num {
   }
 
   .svc-why-icon {
-    width: 53px;
-    height: 55px;
+    /* width: 53px;
+    height: 55px; */
+    width: 44px;
+    height: 46px;
+  }
+
+  .svc-why-item{
+    gap: 5px;
   }
 
   .svc-why-icon img {
@@ -3133,6 +3152,8 @@ a.btn.login:hover {
 
   .approach-step .approach-num {
     margin: 0;
+    width: 40px;
+    height: 40px;
   }
 
   .approach-step .step-title,
@@ -3158,6 +3179,13 @@ a.btn.login:hover {
 
   .hiw-grid {
     gap: 20px;
+  }
+
+  .reporting-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -8280,6 +8308,13 @@ section.plans .features {
    --------------------------------------------------------- */
 
 @media (max-width: 1023px) {
+  .plans-page{
+    padding:unset;
+  }
+
+  body .plan-card h2{
+    font-size: 21px !important;
+  }
 
   /* Header */
   .site-header {
