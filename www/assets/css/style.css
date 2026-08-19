@@ -6207,10 +6207,13 @@ p.banner-title {
   transform: translateY(-2px);
 }
 
+.eco-system-section{
+  padding-block: 30px;
+}
 
 .eco-system-section img {
   width: 100%;
-  max-width: 900px;
+  max-width: 900px;  
 }
 
 .container-eco {
@@ -8312,7 +8315,7 @@ section.plans .features {
 
 @media (max-width: 1023px) {
   .plans-page{
-    padding:unset;
+    padding:20px !important;
   }
 
   body .plan-card h2{
