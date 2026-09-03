@@ -2690,10 +2690,21 @@ a {
   text-decoration: none;
 }
 
+.client-image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 40px;
+}
+
 img.client-image {
-  border-radius: 12px;
-  height: 250px;
-  padding-bottom: 20px;
+  border-radius: 100%;
+  height: 300px;
+  width:300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 10px solid #1f2a44;
 }
 
 .client-title{
