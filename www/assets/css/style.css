@@ -8122,7 +8122,7 @@ section.plans .features {
   line-height: 1.25;
   font-weight: 800;
   letter-spacing: -.2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   /* flex: 1; */
 }
 
